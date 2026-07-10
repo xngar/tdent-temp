@@ -47,25 +47,38 @@ export default function Hero() {
           {/* Left — Text content */}
           <div className="space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/10 border border-blue-200 rounded-full">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/10 border border-blue-200 rounded-full">
               <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
               <span className="text-blue-700 text-sm font-semibold">
                 #1 Clínica Dental de Confianza
               </span>
-            </div>
+            </div> */}
 
             {/* Main heading */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
-              <span className="text-slate-800">Healthy Smile.</span>
+              <span className="text-slate-800">Décadas de</span>
               <br />
-              <span className="gradient-text">Confident You.</span>
+              <span className="gradient-text">excelencia dental</span>
+              <br />
+              <span className="text-slate-600 font-extrabold">
+                Sonrisas que perduran
+              </span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-lg sm:text-xl text-slate-500 max-w-md leading-relaxed">
-              Advanced dental care with a gentle touch. Because your smile
-              deserves the very best treatment available.
+              <span className="font-semibold text-slate-800">
+                Tradición humana
+              </span>{" "}
+              y<span className="gradient-text"> tecnología de vanguardia</span>{" "}
+              para cuidar tu sonrisa y la de tu familia.
             </p>
+
+            {/* Short description */}
+            {/* <p className="text-sm sm:text-base text-slate-600 max-w-md leading-relaxed">
+              Atención dental experta y personalizada para una sonrisa segura,
+              cómoda y duradera.
+            </p> */}
 
             {/* CTA buttons */}
             <div className="flex flex-wrap gap-4">
@@ -73,18 +86,18 @@ export default function Hero() {
                 href="#contact"
                 id="hero-book-appointment"
                 className="btn-primary inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-2xl shadow-lg"
-                aria-label="Reservar cita en T-DENT"
+                aria-label="Agenda tu consulta en T-DENT"
               >
-                Book Appointment
+                Agenda tu consulta
                 <ChevronRight className="w-5 h-5" aria-hidden="true" />
               </Link>
               <Link
-                href="#services"
+                href="#about"
                 id="hero-our-services"
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/80 border border-slate-200 text-slate-700 font-semibold rounded-2xl hover:bg-white hover:shadow-md transition-all duration-200"
-                aria-label="Ver nuestros servicios dentales"
+                aria-label="Conoce nuestra historia"
               >
-                Our Services
+                Conoce nuestra historia
                 <ChevronRight className="w-5 h-5" aria-hidden="true" />
               </Link>
             </div>
@@ -92,7 +105,10 @@ export default function Hero() {
             {/* Trusted patients */}
             <div className="flex items-center gap-4">
               {/* Avatars */}
-              <div className="flex -space-x-3" aria-label="Avatares de pacientes satisfechos">
+              <div
+                className="flex -space-x-3"
+                aria-label="Avatares de pacientes satisfechos"
+              >
                 {avatars.map((avatar, i) => (
                   <div
                     key={i}
@@ -123,8 +139,10 @@ export default function Hero() {
                   ))}
                 </div>
                 <p className="text-sm text-slate-600">
-                  <span className="font-bold text-slate-800">Trusted by 10K+</span>{" "}
-                  Happy Patients ❤️
+                  <span className="font-bold text-slate-800">
+                    Confiados por 10K+
+                  </span>{" "}
+                  Pacientes satisfechos ❤️
                 </p>
               </div>
             </div>
@@ -148,41 +166,47 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 to-transparent" />
               </div>
 
-              {/* Floating card — Pain-Free Treatment */}
+              {/* Floating card — Tratamiento sin dolor */}
               <div className="animate-float absolute top-6 -right-4 lg:-right-12">
                 <div className="glass-card rounded-2xl p-4 shadow-xl min-w-[180px]">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
-                      <Stethoscope className="w-5 h-5 text-white" aria-hidden="true" />
+                      <Stethoscope
+                        className="w-5 h-5 text-white"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div>
                       <p className="text-sm font-bold text-slate-800">
-                        Pain-Free
+                        Tratamiento
                       </p>
                       <p className="text-sm font-bold text-slate-800">
-                        Treatment
+                        sin dolor
                       </p>
                     </div>
                   </div>
                   <p className="text-xs text-slate-500 leading-snug">
-                    Modern technology for comfortable care
+                    Tecnología moderna para cuidados cómodos y eficientes
                   </p>
                 </div>
               </div>
 
-              {/* Floating card — Open Today */}
+              {/* Floating card — Abierto hoy */}
               <div className="animate-float-delay absolute bottom-8 -right-4 lg:-right-12">
                 <div className="glass-card rounded-2xl p-4 shadow-xl min-w-[180px]">
                   <div className="flex items-center gap-3">
                     <div className="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center animate-pulse-ring">
-                      <Clock className="w-4 h-4 text-white" aria-hidden="true" />
+                      <Clock
+                        className="w-4 h-4 text-white"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-slate-500">
-                        Open Today
+                        Abierto hoy
                       </p>
                       <p className="text-sm font-bold text-slate-800">
-                        9:00 AM – 8:00 PM
+                        9:00 – 20:00
                       </p>
                     </div>
                     <ChevronRight
@@ -202,10 +226,8 @@ export default function Hero() {
                       aria-hidden="true"
                     />
                     <div>
-                      <p className="text-sm font-bold text-slate-800">
-                        15K+
-                      </p>
-                      <p className="text-xs text-slate-500">Successful Cases</p>
+                      <p className="text-sm font-bold text-slate-800">15K+</p>
+                      <p className="text-xs text-slate-500">Casos exitosos</p>
                     </div>
                   </div>
                 </div>
