@@ -3,12 +3,12 @@ import { Stethoscope, Phone, Mail, MapPin, Clock, Globe, Share2, Rss, MessageCir
 
 const footerLinks = {
   Services: [
-    { label: "General Dentistry", href: "#services" },
-    { label: "Cosmetic Dentistry", href: "#services" },
-    { label: "Dental Implants", href: "#services" },
-    { label: "Kids Dentistry", href: "#services" },
-    { label: "Orthodontics", href: "#services" },
-    { label: "Emergency Care", href: "#services" },
+    { label: "Implantología", href: "#services" },
+    { label: "Periodoncia", href: "#services" },
+    { label: "Rehabilitación", href: "#services" },
+    { label: "Prevención", href: "#services" },
+    { label: "Radiología", href: "#services" },
+    { label: "Urgencias", href: "#services" },
   ],
   Company: [
     { label: "About Us", href: "#about" },
