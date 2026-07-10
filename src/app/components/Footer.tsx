@@ -1,5 +1,15 @@
 import Link from "next/link";
-import { Stethoscope, Phone, Mail, MapPin, Clock, Globe, Share2, Rss, MessageCircle } from "lucide-react";
+import {
+  Stethoscope,
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Globe,
+  Share2,
+  Rss,
+  MessageCircle,
+} from "lucide-react";
 
 const footerLinks = {
   Servicios: [
@@ -77,7 +87,10 @@ export default function Footer() {
               aria-label="T-DENT — Ir al inicio"
             >
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-                <Stethoscope className="w-5 h-5 text-white" aria-hidden="true" />
+                <Stethoscope
+                  className="w-5 h-5 text-white"
+                  aria-hidden="true"
+                />
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-xl font-bold text-white tracking-tight">
@@ -90,7 +103,9 @@ export default function Footer() {
             </Link>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
-              Atención odontológica personalizada y de calidad desde 2013. Ubicados en Plaza Egaña con instalaciones autorizadas por la Seremi de Salud.
+              Atención odontológica personalizada y de calidad desde 2013.
+              Ubicados en Plaza Egaña con instalaciones autorizadas por la
+              Seremi de Salud.
             </p>
 
             {/* Social links */}
@@ -117,7 +132,10 @@ export default function Footer() {
                   className="flex items-start gap-3 text-sm text-slate-400 hover:text-blue-400 transition-colors duration-200 group"
                 >
                   <div className="w-8 h-8 bg-slate-800 group-hover:bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 transition-colors duration-200">
-                    <Icon className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
+                    <Icon
+                      className="w-4 h-4 flex-shrink-0"
+                      aria-hidden="true"
+                    />
                   </div>
                   <span className="leading-relaxed">{text}</span>
                 </Link>
