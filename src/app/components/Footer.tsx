@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Stethoscope, Phone, Mail, MapPin, Clock, Globe, Share2, Rss, MessageCircle } from "lucide-react";
 
 const footerLinks = {
-  Services: [
+  Servicios: [
     { label: "Implantología", href: "#services" },
     { label: "Periodoncia", href: "#services" },
     { label: "Rehabilitación", href: "#services" },
@@ -10,21 +10,17 @@ const footerLinks = {
     { label: "Radiología", href: "#services" },
     { label: "Urgencias", href: "#services" },
   ],
-  Company: [
-    { label: "About Us", href: "#about" },
-    { label: "Our Team", href: "#team" },
-    { label: "Testimonials", href: "#" },
-    { label: "Blog", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Privacy Policy", href: "#" },
+  Clínica: [
+    { label: "Sobre Nosotros", href: "#about" },
+    { label: "Especialistas", href: "#about" },
+    { label: "Historia T-DENT", href: "#about" },
+    { label: "Contacto", href: "#contact" },
   ],
-  Resources: [
-    { label: "Patient Portal", href: "#" },
-    { label: "FAQ", href: "#" },
-    { label: "Insurance Info", href: "#" },
-    { label: "Dental Tips", href: "#" },
-    { label: "Before & After", href: "#" },
-    { label: "Financing", href: "#" },
+  Recursos: [
+    { label: "Facilidades de Pago", href: "#about" },
+    { label: "Educación y Consejos", href: "#about" },
+    { label: "Urgencias Dentales", href: "#services" },
+    { label: "Preguntas Frecuentes", href: "#" },
   ],
 };
 
@@ -38,21 +34,21 @@ const socialLinks = [
 const contactInfo = [
   {
     icon: Phone,
-    text: "+34 900 000 000",
+    text: "+56 9 72650540",
     label: "Teléfono de T-DENT",
-    href: "tel:+34900000000",
+    href: "tel:+56972650540",
   },
   {
     icon: Mail,
-    text: "info@tdent.com",
+    text: "contacto@tdent.com",
     label: "Email de T-DENT",
-    href: "mailto:info@tdent.com",
+    href: "mailto:contacto@tdent.com",
   },
   {
     icon: MapPin,
-    text: "Calle Principal 123, Madrid, España",
+    text: "Edificio Egaña Oficinas, Plaza Egaña (Límite La Reina - Ñuñoa)",
     label: "Dirección de T-DENT",
-    href: "https://maps.google.com",
+    href: "https://maps.google.com/?q=Edificio+Egaña+Oficinas+Plaza+Egaña",
   },
 ];
 
@@ -94,8 +90,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
-              Providing exceptional dental care with compassion, innovation, and
-              dedication to your smile for over 15 years.
+              Atención odontológica personalizada y de calidad desde 2013. Ubicados en Plaza Egaña con instalaciones autorizadas por la Seremi de Salud.
             </p>
 
             {/* Social links */}
@@ -155,15 +150,15 @@ export default function Footer() {
             </nav>
           ))}
 
-          {/* Hours column */}
+          {/* Horarios column */}
           <div className="lg:col-span-1">
             <h3 className="text-sm font-bold text-white uppercase tracking-widest mb-5">
-              Hours
+              Horarios
             </h3>
             <div className="flex items-center gap-2 mb-4">
               <Clock className="w-4 h-4 text-blue-500" aria-hidden="true" />
               <span className="text-xs text-emerald-400 font-semibold">
-                Open Today
+                Abierto Hoy
               </span>
             </div>
             <ul className="space-y-3" role="list">
@@ -191,19 +186,19 @@ export default function Footer() {
               href="#"
               className="text-xs text-slate-500 hover:text-slate-300 transition-colors duration-200"
             >
-              Privacy Policy
+              Políticas de Privacidad
             </Link>
             <Link
               href="#"
               className="text-xs text-slate-500 hover:text-slate-300 transition-colors duration-200"
             >
-              Terms of Service
+              Términos de Servicio
             </Link>
             <Link
               href="#"
               className="text-xs text-slate-500 hover:text-slate-300 transition-colors duration-200"
             >
-              Cookie Policy
+              Políticas de Cookies
             </Link>
           </div>
         </div>
