@@ -44,21 +44,21 @@ const socialLinks = [
 const contactInfo = [
   {
     icon: Phone,
-    text: "+56 9 72650540",
+    text: "+56 9 9679 3256",
     label: "Teléfono de T-DENT",
-    href: "tel:+56972650540",
+    href: "tel:+56996793256",
   },
   {
     icon: Mail,
-    text: "contacto@tdent.com",
+    text: "drtoroalvear@gmail.com",
     label: "Email de T-DENT",
-    href: "mailto:contacto@tdent.com",
+    href: "mailto:drtoroalvear@gmail.com",
   },
   {
     icon: MapPin,
-    text: "Edificio Egaña Oficinas, Plaza Egaña (Límite La Reina - Ñuñoa)",
+    text: "Av. Ossa 235 of 835, La Reina, Chile",
     label: "Dirección de T-DENT",
-    href: "https://maps.google.com/?q=Edificio+Egaña+Oficinas+Plaza+Egaña",
+    href: "https://maps.google.com/?q=Av.+Ossa+235+of+835,+la+reina,+Chile",
   },
 ];
 
@@ -71,7 +71,7 @@ const hours = [
 export default function Footer() {
   return (
     <footer
-      id="contact"
+      id="footer"
       className="bg-slate-900 text-slate-300"
       role="contentinfo"
     >

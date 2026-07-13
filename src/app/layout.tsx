@@ -73,14 +73,14 @@ const jsonLd = {
   description:
     "Clínica dental profesional con más de 15,000 tratamientos exitosos.",
   url: "https://tdent.com",
-  telephone: "+34-900-000-000",
-  email: "info@tdent.com",
+  telephone: "+56 9 9679 3256",
+  email: "drtoroalvear@gmail.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Calle Principal 123",
-    addressLocality: "Madrid",
-    postalCode: "28001",
-    addressCountry: "ES",
+    streetAddress: "Av. Ossa 235 of 835",
+    addressLocality: "La Reina",
+    addressRegion: "Metropolitana",
+    addressCountry: "CL",
   },
   openingHoursSpecification: [
     {
@@ -98,8 +98,8 @@ const jsonLd = {
   ],
   geo: {
     "@type": "GeoCoordinates",
-    latitude: "40.4168",
-    longitude: "-3.7038",
+    latitude: "-33.4526",
+    longitude: "-70.5724",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -133,7 +133,7 @@ export default function RootLayout({
 
         {/* Floating WhatsApp Button */}
         <a
-          href="https://wa.me/56972650540"
+          href="https://wa.me/56996793256"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-[0_4px_18px_rgba(37,211,102,0.5)] transition-all duration-300 hover:scale-110 flex items-center justify-center group"

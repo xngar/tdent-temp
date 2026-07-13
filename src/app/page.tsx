@@ -5,6 +5,7 @@ import FeaturesBar from "./components/FeaturesBar";
 import OurApproach from "./components/OurApproach";
 import ServicesGrid from "./components/ServicesGrid";
 import CTABanner from "./components/CTABanner";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 // Lightweight skeleton for Suspense fallbacks
@@ -53,6 +54,11 @@ export default function HomePage() {
         <Suspense fallback={<SectionSkeleton />}>
           <CTABanner />
         </Suspense>
+
+        {/* ⑥ Contact section */}
+        <Suspense fallback={<SectionSkeleton />}>
+          <Contact />
+        </Suspense>
       </main>
 
       {/* Footer */}
@@ -60,3 +66,4 @@ export default function HomePage() {
     </>
   );
 }
+
