@@ -2,15 +2,16 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { Menu, X, Stethoscope } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#about", label: "About Us" },
-  { href: "#team", label: "Our Team" },
-  { href: "#resources", label: "Resources" },
-  { href: "#contact", label: "Contact" },
+  { href: "#home", label: "Inicio" },
+  { href: "#services", label: "Servicios" },
+  { href: "#about", label: "Nosotros" },
+  { href: "#team", label: "Nuestro Equipo" },
+  { href: "#resources", label: "Recursos" },
+  { href: "#contact", label: "Contacto" },
 ];
 
 export default function Navbar() {
@@ -56,20 +57,17 @@ export default function Navbar() {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center gap-2.5 group"
+              className="flex items-center group"
               aria-label="T-DENT — Ir al inicio"
             >
-              <div className="w-9 h-9 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-blue-500/40 transition-shadow duration-300">
-                <Stethoscope className="w-5 h-5 text-white" aria-hidden="true" />
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="text-xl font-bold text-blue-600 tracking-tight">
-                  T-DENT
-                </span>
-                <span className="text-[10px] text-slate-400 font-medium uppercase tracking-widest">
-                  Dental Clinic
-                </span>
-              </div>
+              <Image
+                src="/logo-tdent.svg"
+                alt="T-DENT Clínica Dental"
+                width={160}
+                height={56}
+                priority
+                className="h-12 lg:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </Link>
 
             {/* Desktop navigation */}
@@ -102,7 +100,7 @@ export default function Navbar() {
                 className="btn-primary px-5 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-semibold rounded-xl shadow-md hover:shadow-blue-500/40 transition-all duration-200 flex items-center gap-2"
                 aria-label="Reservar una cita dental"
               >
-                Book Appointment
+                Agendar Cita
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -166,7 +164,7 @@ export default function Navbar() {
                 className="flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl shadow-md"
                 aria-label="Reservar una cita dental"
               >
-                Book Appointment
+                Agendar Cita
                 <svg
                   className="w-4 h-4"
                   fill="none"

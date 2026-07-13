@@ -55,23 +55,22 @@ export default function Hero() {
             </div> */}
 
             {/* Main heading */}
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
-              <span className="text-slate-800">Décadas de</span>
-              <br />
-              <span className="gradient-text">excelencia dental</span>
-              <br />
-              <span className="text-slate-600 font-extrabold">
-                Sonrisas que perduran
+            <h1 className="font-black tracking-tight leading-tight">
+              <span className="block text-4xl sm:text-5xl lg:text-6xl text-slate-800">
+                Odontología de <span className="gradient-text">alta calidad</span>
+              </span>
+              <span className="block text-2xl sm:text-3xl lg:text-4xl text-slate-500 font-extrabold mt-1">
+                Tu sonrisa, nuestra prioridad
               </span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-lg sm:text-xl text-slate-500 max-w-md leading-relaxed">
-              <span className="font-semibold text-slate-800">
-                Tradición humana
+              Brindamos <span className="font-semibold text-slate-800">
+                atención personalizada
               </span>{" "}
               y<span className="gradient-text"> tecnología de vanguardia</span>{" "}
-              para cuidar tu sonrisa y la de tu familia.
+              en un entorno moderno, tranquilo y accesible.
             </p>
 
             {/* Short description */}

@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
-  Stethoscope,
   Phone,
   Mail,
   MapPin,
@@ -83,23 +83,16 @@ export default function Footer() {
             {/* Logo */}
             <Link
               href="/"
-              className="inline-flex items-center gap-2.5"
+              className="inline-flex items-center group"
               aria-label="T-DENT — Ir al inicio"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-                <Stethoscope
-                  className="w-5 h-5 text-white"
-                  aria-hidden="true"
-                />
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="text-xl font-bold text-white tracking-tight">
-                  T-DENT
-                </span>
-                <span className="text-[10px] text-slate-400 font-medium uppercase tracking-widest">
-                  Dental Clinic
-                </span>
-              </div>
+              <Image
+                src="/logo-tdent.svg"
+                alt="T-DENT Clínica Dental"
+                width={140}
+                height={48}
+                className="h-12 w-auto object-contain brightness-0 invert transition-transform duration-300 group-hover:scale-105"
+              />
             </Link>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
