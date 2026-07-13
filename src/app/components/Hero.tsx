@@ -139,7 +139,7 @@ export default function Hero() {
                 </div>
                 <p className="text-sm text-slate-600">
                   <span className="font-bold text-slate-800">
-                    Confiados por 10K+
+                    Confiados por mas de 5.000 mil
                   </span>{" "}
                   Pacientes satisfechos ❤️
                 </p>
