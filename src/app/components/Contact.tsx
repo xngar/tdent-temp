@@ -14,6 +14,7 @@ export default function Contact() {
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [serverError, setServerError] = useState("");
 
   const validate = () => {
     const newErrors: { [key: string]: string } = {};
@@ -53,7 +54,7 @@ export default function Contact() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!validate()) {
@@ -61,18 +62,29 @@ export default function Contact() {
     }
 
     setIsSubmitting(true);
+    setServerError("");
 
-    // Simulate sending email/form message
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
-    }, 1500);
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setServerError(data.error || "Error al enviar el mensaje. Inténtalo de nuevo.");
+        return;
+      }
+
+      setIsSubmitted(true);
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    } catch {
+      setServerError("Error de conexión. Revisa tu internet e inténtalo de nuevo.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -191,9 +203,8 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Su nombre"
-                    className={`w-full px-4 py-3 rounded-xl border ${
-                      errors.name ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
-                    } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.name ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
+                      } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
                   />
                   {errors.name && (
                     <p className="text-red-500 text-xs mt-1 font-medium">{errors.name}</p>
@@ -215,9 +226,8 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="ejemplo@correo.com"
-                    className={`w-full px-4 py-3 rounded-xl border ${
-                      errors.email ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
-                    } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.email ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
+                      } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
                   />
                   {errors.email && (
                     <p className="text-red-500 text-xs mt-1 font-medium">{errors.email}</p>
@@ -239,9 +249,8 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+56 9 9679 3256"
-                    className={`w-full px-4 py-3 rounded-xl border ${
-                      errors.phone ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
-                    } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.phone ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
+                      } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
                   />
                   {errors.phone && (
                     <p className="text-red-500 text-xs mt-1 font-medium">{errors.phone}</p>
@@ -263,14 +272,21 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Cuéntanos cómo podemos ayudarte..."
-                    className={`w-full px-4 py-3 rounded-xl border ${
-                      errors.message ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
-                    } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm h-32 resize-none`}
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.message ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
+                      } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm h-32 resize-none`}
                   />
                   {errors.message && (
                     <p className="text-red-500 text-xs mt-1 font-medium">{errors.message}</p>
                   )}
                 </div>
+
+                {/* Server Error */}
+                {serverError && (
+                  <div className="flex items-start gap-3 bg-red-50 border border-red-200 text-red-700 rounded-xl px-4 py-3 text-sm font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
+                    <span>{serverError}</span>
+                  </div>
+                )}
 
                 {/* Submit Button */}
                 <button
