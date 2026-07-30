@@ -89,7 +89,7 @@ export default function CTABanner() {
 
               {/* Secondary — WhatsApp */}
               <Link
-                href="https://wa.me/56996793256?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20en%20T-DENT"
+                href="https://wa.me/56983738418?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20en%20T-DENT"
                 id="cta-banner-whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
