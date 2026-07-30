@@ -57,7 +57,8 @@ export default function Hero() {
             {/* Main heading */}
             <h1 className="font-black tracking-tight leading-tight">
               <span className="block text-4xl sm:text-5xl lg:text-6xl text-slate-800">
-                Odontología de <span className="gradient-text">alta calidad</span>
+                Odontología de{" "}
+                <span className="gradient-text">alta calidad</span>
               </span>
               <span className="block text-2xl sm:text-3xl lg:text-4xl text-slate-500 font-extrabold mt-1">
                 Tu sonrisa, nuestra prioridad
@@ -66,7 +67,8 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="text-lg sm:text-xl text-slate-500 max-w-md leading-relaxed">
-              Brindamos <span className="font-semibold text-slate-800">
+              Brindamos{" "}
+              <span className="font-semibold text-slate-800">
                 atención personalizada
               </span>{" "}
               y<span className="gradient-text"> tecnología de vanguardia</span>{" "}
@@ -153,11 +155,11 @@ export default function Hero() {
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(37,99,235,0.2)]">
                 <Image
-                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=900&fit=crop"
+                  src="/foto-interior-clinica.png"
                   alt="Paciente feliz con sonrisa sana en T-DENT"
                   width={560}
-                  height={630}
-                  className="w-full h-auto object-cover"
+                  height={760}
+                  className="w-full h-[520px] sm:h-[620px] lg:h-[630px] object-cover object-center"
                   priority
                   quality={90}
                 />
