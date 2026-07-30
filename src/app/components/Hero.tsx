@@ -155,7 +155,7 @@ export default function Hero() {
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(37,99,235,0.2)]">
                 <Image
-                  src="/foto-interior-clinica.png"
+                  src="/foto-interior.clinica.png"
                   alt="Paciente feliz con sonrisa sana en T-DENT"
                   width={560}
                   height={760}
