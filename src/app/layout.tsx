@@ -73,8 +73,8 @@ const jsonLd = {
   description:
     "Clínica dental profesional con más de 15,000 tratamientos exitosos.",
   url: "https://tdent.com",
-  telephone: "+56 9 9679 3256",
-  email: "drtoroalvear@gmail.com",
+  telephone: "+56 9 8373 8418",
+  email: "clinicadentaltdent@gmail.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Av. Ossa 235 of 835",

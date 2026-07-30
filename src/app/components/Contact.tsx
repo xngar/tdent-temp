@@ -121,7 +121,7 @@ export default function Contact() {
 
           {/* Card 2: Contact (Light Card) */}
           <a
-            href="tel:+56996793256"
+            href="tel:+56983738418"
             className="bg-white border border-slate-100 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-md group"
           >
             <div className="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -129,13 +129,13 @@ export default function Contact() {
             </div>
             <h3 className="font-extrabold text-xl text-slate-900 mb-3">Contacto</h3>
             <p className="text-blue-600 font-bold text-base transition-colors group-hover:text-blue-700">
-              +56 9 9679 3256
+              +56 9 8373 8418
             </p>
           </a>
 
           {/* Card 3: Email (Light Card) */}
           <a
-            href="mailto:drtoroalvear@gmail.com"
+            href="mailto:clinicadentaltdent@gmail.com"
             className="bg-white border border-slate-100 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-md group"
           >
             <div className="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -143,7 +143,7 @@ export default function Contact() {
             </div>
             <h3 className="font-extrabold text-xl text-slate-900 mb-3">Email</h3>
             <p className="text-blue-600 font-bold text-base transition-colors group-hover:text-blue-700 break-all">
-              drtoroalvear@gmail.com
+              clinicadentaltdent@gmail.com
             </p>
           </a>
         </div>
@@ -248,7 +248,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+56 9 9679 3256"
+                    placeholder="+56 9 8373 8418"
                     className={`w-full px-4 py-3 rounded-xl border ${errors.phone ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
                       } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
                   />

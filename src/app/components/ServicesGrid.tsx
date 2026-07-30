@@ -13,6 +13,7 @@ const services = [
       "Prótesis totales fijas sobre implantes",
       "Exodoncias (extracciones)",
       "Cirugías complementarias a implantes",
+      "Urgencias",
     ],
     icon: Activity,
     color: "text-blue-600",
@@ -53,7 +54,7 @@ const services = [
       "Blanqueamientos",
       "Resinas (tapaduras color diente)",
       "Prótesis removibles (placas)",
-      "Urgencias",
+
     ],
     icon: Smile,
     color: "text-blue-600",
@@ -161,7 +162,7 @@ export default function ServicesGrid() {
                   <p className="text-sm text-slate-500 leading-relaxed mb-4">
                     {description}
                   </p>
-                  
+
                   {/* Service list items */}
                   <ul className="space-y-2 mb-6 flex-1" role="list">
                     {items.map((item) => (

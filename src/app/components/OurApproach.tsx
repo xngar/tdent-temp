@@ -4,7 +4,7 @@ import { CheckCircle2, Award, ChevronRight } from "lucide-react";
 
 const checkItems = [
   "Instalaciones de primer nivel autorizadas por la Seremi de Salud",
-  "Atención personalizada guiada por el Dr. Hernán Toro y especialistas",
+  "Atención personalizada guiada por el Dr. Hernán Toro",
   "Ubicación en Plaza Egaña (La Reina / Ñuñoa), en Edificio Egaña Oficinas",
   "Facilidades de pago: 3 a 12 cuotas sin interés (tarjetas, transferencias, cheques)",
 ];

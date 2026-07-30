@@ -44,15 +44,15 @@ const socialLinks = [
 const contactInfo = [
   {
     icon: Phone,
-    text: "+56 9 9679 3256",
+    text: "+56 9 8373 8418",
     label: "Teléfono de T-DENT",
-    href: "tel:+56996793256",
+    href: "tel:+56983738418",
   },
   {
     icon: Mail,
-    text: "drtoroalvear@gmail.com",
+    text: "clinicadentaltdent@gmail.com",
     label: "Email de T-DENT",
-    href: "mailto:drtoroalvear@gmail.com",
+    href: "mailto:clinicadentaltdent@gmail.com",
   },
   {
     icon: MapPin,

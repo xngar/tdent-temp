@@ -17,14 +17,6 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
 
-  // Turbopack is the default bundler in Next.js 16 — no explicit config needed
-  // (do NOT set webpack config here)
-
-  // Turbopack root configuration
-  turbopack: {
-    root: __dirname,
-  },
-
   // Experimental features for Next.js 16
   experimental: {
     // Partial prerendering for better performance

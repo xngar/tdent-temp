@@ -104,11 +104,11 @@ export default function CTABanner() {
               <p className="text-blue-200 text-sm text-center lg:text-center">
                 O llámanos al{" "}
                 <Link
-                  href="tel:+56996793256"
+                  href="tel:+56983738418"
                   className="text-white font-bold hover:text-blue-200 transition-colors duration-200"
                   aria-label="Llamar a T-DENT"
                 >
-                  +56 9 9679 3256
+                  +56 9 8373 8418
                 </Link>
               </p>
             </div>
