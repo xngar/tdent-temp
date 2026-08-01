@@ -1,6 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Activity, Shield, Smile, Heart, Info, Check, ChevronRight } from "lucide-react";
+import {
+  Activity,
+  Shield,
+  Smile,
+  Heart,
+  Info,
+  Check,
+  ChevronRight,
+} from "lucide-react";
 
 const services = [
   {
@@ -54,7 +62,6 @@ const services = [
       "Blanqueamientos",
       "Resinas (tapaduras color diente)",
       "Prótesis removibles (placas)",
-
     ],
     icon: Smile,
     color: "text-blue-600",
@@ -126,7 +133,17 @@ export default function ServicesGrid() {
         {/* Services grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map(
-            ({ id, title, description, items, icon: Icon, bg, image, imageAlt, href }) => (
+            ({
+              id,
+              title,
+              description,
+              items,
+              icon: Icon,
+              bg,
+              image,
+              imageAlt,
+              href,
+            }) => (
               <article
                 key={id}
                 className="service-card bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 flex flex-col"
@@ -141,7 +158,7 @@ export default function ServicesGrid() {
                     className="service-card-image object-cover"
                   />
                   {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent" />
 
                   {/* Icon badge on image */}
                   <div className="absolute bottom-4 left-4">
@@ -166,8 +183,14 @@ export default function ServicesGrid() {
                   {/* Service list items */}
                   <ul className="space-y-2 mb-6 flex-1" role="list">
                     {items.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-xs text-slate-600">
-                        <Check className="w-3.5 h-3.5 text-blue-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                      <li
+                        key={item}
+                        className="flex items-start gap-2 text-xs text-slate-600"
+                      >
+                        <Check
+                          className="w-3.5 h-3.5 text-blue-500 shrink-0 mt-0.5"
+                          aria-hidden="true"
+                        />
                         <span className="leading-tight">{item}</span>
                       </li>
                     ))}
@@ -181,21 +204,18 @@ export default function ServicesGrid() {
                       aria-label={`Solicitar información sobre ${title} en T-DENT`}
                     >
                       Solicitar Cita
-                      <ChevronRight
-                        className="w-4 h-4"
-                        aria-hidden="true"
-                      />
+                      <ChevronRight className="w-4 h-4" aria-hidden="true" />
                     </Link>
                   </div>
                 </div>
               </article>
-            )
+            ),
           )}
         </div>
 
         {/* Footnote / Banner */}
         <div className="mt-12 p-6 sm:p-8 bg-blue-50 border border-blue-100 rounded-3xl flex flex-col md:flex-row items-center md:items-start gap-6 shadow-sm">
-          <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 text-white shadow-md">
+          <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center shrink-0 text-white shadow-md">
             <Info className="w-6 h-6" aria-hidden="true" />
           </div>
           <div className="space-y-2">
@@ -203,7 +223,16 @@ export default function ServicesGrid() {
               Centro de Radiología e Imagenología y Derivaciones
             </h4>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Contamos con un <strong>centro de Radiología e Imagenología</strong> en el mismo edificio y una completa red de derivaciones con profesionales de excelencia para especialidades odontológicas complementarias a nuestros servicios, como por ejemplo: <strong>Endodoncia, Ortodoncia, Odontopediatría, Cirugía y Traumatología Máxilo Facial, Trastornos temporomandibulares y dolor orofacial</strong>.
+              Contamos con un{" "}
+              <strong>centro de Radiología e Imagenología</strong> en el mismo
+              edificio y una completa red de derivaciones con profesionales de
+              excelencia para especialidades odontológicas complementarias a
+              nuestros servicios, como por ejemplo:{" "}
+              <strong>
+                Endodoncia, Ortodoncia, Odontopediatría, Cirugía y Traumatología
+                Máxilo Facial, Trastornos temporomandibulares y dolor orofacial
+              </strong>
+              .
             </p>
           </div>
         </div>

@@ -155,13 +155,15 @@ export default function Hero() {
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(37,99,235,0.2)]">
                 <Image
-                  src="/foto-interior.clinica.png"
+                  src="/foto-interior.clinica.webp"
                   alt="Paciente feliz con sonrisa sana en T-DENT"
                   width={560}
                   height={760}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 560px"
                   className="w-full h-[520px] sm:h-[620px] lg:h-[630px] object-cover object-center"
                   priority
-                  quality={90}
+                  fetchPriority="high"
+                  quality={85}
                 />
                 {/* Blue tint overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 to-transparent" />
