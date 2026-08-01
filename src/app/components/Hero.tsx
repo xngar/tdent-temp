@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Stethoscope, Clock, CheckCircle, ChevronRight } from "lucide-react";
 
+const heroImage = "/foto-interior.clinica.webp";
+
 // Patient avatar data
 const avatars = [
   {
@@ -121,6 +123,7 @@ export default function Hero() {
                       fill
                       sizes="40px"
                       className="object-cover"
+                      loading="lazy"
                     />
                   </div>
                 ))}
@@ -155,22 +158,22 @@ export default function Hero() {
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(37,99,235,0.2)]">
                 <Image
-                  src="/foto-interior.clinica.webp"
+                  src={heroImage}
                   alt="Paciente feliz con sonrisa sana en T-DENT"
                   width={560}
                   height={760}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 560px"
-                  className="w-full h-[520px] sm:h-[620px] lg:h-[630px] object-cover object-center"
+                  className="w-full h-[480px] sm:h-[560px] lg:h-[600px] object-cover object-center"
                   priority
                   fetchPriority="high"
-                  quality={85}
+                  quality={60}
                 />
                 {/* Blue tint overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 to-transparent" />
               </div>
 
               {/* Floating card — Tratamiento sin dolor */}
-              <div className="animate-float absolute top-6 -right-4 lg:-right-12">
+              <div className="absolute top-6 -right-4 lg:-right-12">
                 <div className="glass-card rounded-2xl p-4 shadow-xl min-w-[180px]">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
@@ -195,7 +198,7 @@ export default function Hero() {
               </div>
 
               {/* Floating card — Abierto hoy */}
-              <div className="animate-float-delay absolute bottom-8 -right-4 lg:-right-12">
+              <div className="absolute bottom-8 -right-4 lg:-right-12">
                 <div className="glass-card rounded-2xl p-4 shadow-xl min-w-[180px]">
                   <div className="flex items-center gap-3">
                     <div className="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center animate-pulse-ring">

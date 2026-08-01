@@ -144,6 +144,7 @@ export default function RootLayout({
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-[0_4px_18px_rgba(37,211,102,0.5)] transition-all duration-300 hover:scale-110 flex items-center justify-center group"
           aria-label="Contactar por WhatsApp"
+          data-no-impact="true"
         >
           {/* Pulsing ring animation */}
           <span className="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping opacity-75 group-hover:animate-none" />
