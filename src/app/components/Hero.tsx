@@ -166,7 +166,7 @@ export default function Hero() {
                   className="w-full h-[480px] sm:h-[560px] lg:h-[600px] object-cover object-center"
                   priority
                   fetchPriority="high"
-                  quality={60}
+                  quality={80}
                 />
                 {/* Blue tint overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 to-transparent" />
