@@ -102,7 +102,7 @@ export default function Footer() {
             </p>
 
             {/* Social links */}
-            <div className="flex items-center gap-3">
+            {/* <div className="flex items-center gap-3">
               {socialLinks.map(({ icon: Icon, href, label }) => (
                 <Link
                   key={label}
@@ -113,7 +113,7 @@ export default function Footer() {
                   <Icon className="w-4 h-4" aria-hidden="true" />
                 </Link>
               ))}
-            </div>
+            </div> */}
 
             {/* Contact info */}
             <address className="not-italic space-y-3">
@@ -124,7 +124,7 @@ export default function Footer() {
                   aria-label={label}
                   className="flex items-start gap-3 text-sm text-white hover:text-blue-400 transition-colors duration-200 group"
                 >
-                  <div className="w-8 h-8 bg-slate-800 group-hover:bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 transition-colors duration-200">
+                  <div className="w-8 h-8 bg[var(--color-secundario)] group-hover:bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 transition-colors duration-200">
                     <Icon
                       className="w-4 h-4 flex-shrink-0"
                       aria-hidden="true"
