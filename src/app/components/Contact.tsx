@@ -44,7 +44,7 @@ export default function Contact() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -74,14 +74,18 @@ export default function Contact() {
       const data = await res.json();
 
       if (!res.ok) {
-        setServerError(data.error || "Error al enviar el mensaje. Inténtalo de nuevo.");
+        setServerError(
+          data.error || "Error al enviar el mensaje. Inténtalo de nuevo.",
+        );
         return;
       }
 
       setIsSubmitted(true);
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch {
-      setServerError("Error de conexión. Revisa tu internet e inténtalo de nuevo.");
+      setServerError(
+        "Error de conexión. Revisa tu internet e inténtalo de nuevo.",
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -100,14 +104,15 @@ export default function Contact() {
             Ponte en Contacto
           </h2>
           <p className="text-slate-500 text-lg mt-4 leading-relaxed">
-            ¿Tienes dudas o deseas agendar? Envíanos tus consultas y te responderemos a la brevedad.
+            ¿Tienes dudas o deseas agendar? Envíanos tus consultas y te
+            responderemos a la brevedad.
           </p>
         </div>
 
         {/* Contact Info Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-16">
           {/* Card 1: Address (Primary Blue Accent) */}
-          <div className="bg-blue-600 text-white rounded-3xl p-8 flex flex-col items-center text-center shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
+          <div className="bg-[var(--color-principal)] text-white rounded-3xl p-8 flex flex-col items-center text-center shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
             <div className="w-14 h-14 bg-white/15 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 border border-white/10">
               <MapPin className="w-7 h-7 text-white" aria-hidden="true" />
             </div>
@@ -122,13 +127,13 @@ export default function Contact() {
           {/* Card 2: Contact (Light Card) */}
           <a
             href="tel:+56983738418"
-            className="bg-white border border-slate-100 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-md group"
+            className="bg-[var(--color-principal)]  border-slate-100 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-md group"
           >
-            <div className="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="w-14 h-14 bg-white/15 text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               <Phone className="w-7 h-7" aria-hidden="true" />
             </div>
-            <h3 className="font-extrabold text-xl text-slate-900 mb-3">Contacto</h3>
-            <p className="text-blue-600 font-bold text-base transition-colors group-hover:text-blue-700">
+            <h3 className="font-extrabold text-xl text-white mb-3">Contacto</h3>
+            <p className="text-white font-bold text-base transition-colors group-hover:text-blue-700">
               +56 9 8373 8418
             </p>
           </a>
@@ -136,13 +141,13 @@ export default function Contact() {
           {/* Card 3: Email (Light Card) */}
           <a
             href="mailto:clinicadentaltdent@gmail.com"
-            className="bg-white border border-slate-100 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-md group"
+            className="bg-[var(--color-principal)] border border-slate-100 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-md group"
           >
-            <div className="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="w-14 h-14 bg-white/15 text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               <Mail className="w-7 h-7" aria-hidden="true" />
             </div>
-            <h3 className="font-extrabold text-xl text-slate-900 mb-3">Email</h3>
-            <p className="text-blue-600 font-bold text-base transition-colors group-hover:text-blue-700 break-all">
+            <h3 className="font-extrabold text-xl text-white mb-3">Email</h3>
+            <p className="text-white font-bold text-base transition-colors group-hover:text-blue-700 break-all">
               clinicadentaltdent@gmail.com
             </p>
           </a>
@@ -176,7 +181,8 @@ export default function Contact() {
                   ¡Mensaje Enviado!
                 </h3>
                 <p className="text-slate-500 max-w-sm mx-auto mb-8 text-sm">
-                  Gracias por escribirnos. Nuestro equipo se pondrá en contacto contigo a la brevedad.
+                  Gracias por escribirnos. Nuestro equipo se pondrá en contacto
+                  contigo a la brevedad.
                 </p>
                 <button
                   type="button"
@@ -203,11 +209,16 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Su nombre"
-                    className={`w-full px-4 py-3 rounded-xl border ${errors.name ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
-                      } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
+                    className={`w-full px-4 py-3 rounded-xl border ${
+                      errors.name
+                        ? "border-red-400 focus:ring-red-400"
+                        : "border-slate-200 focus:ring-blue-600"
+                    } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
                   />
                   {errors.name && (
-                    <p className="text-red-500 text-xs mt-1 font-medium">{errors.name}</p>
+                    <p className="text-red-500 text-xs mt-1 font-medium">
+                      {errors.name}
+                    </p>
                   )}
                 </div>
 
@@ -226,11 +237,16 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="ejemplo@correo.com"
-                    className={`w-full px-4 py-3 rounded-xl border ${errors.email ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
-                      } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
+                    className={`w-full px-4 py-3 rounded-xl border ${
+                      errors.email
+                        ? "border-red-400 focus:ring-red-400"
+                        : "border-slate-200 focus:ring-blue-600"
+                    } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
                   />
                   {errors.email && (
-                    <p className="text-red-500 text-xs mt-1 font-medium">{errors.email}</p>
+                    <p className="text-red-500 text-xs mt-1 font-medium">
+                      {errors.email}
+                    </p>
                   )}
                 </div>
 
@@ -249,11 +265,16 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+56 9 8373 8418"
-                    className={`w-full px-4 py-3 rounded-xl border ${errors.phone ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
-                      } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
+                    className={`w-full px-4 py-3 rounded-xl border ${
+                      errors.phone
+                        ? "border-red-400 focus:ring-red-400"
+                        : "border-slate-200 focus:ring-blue-600"
+                    } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm`}
                   />
                   {errors.phone && (
-                    <p className="text-red-500 text-xs mt-1 font-medium">{errors.phone}</p>
+                    <p className="text-red-500 text-xs mt-1 font-medium">
+                      {errors.phone}
+                    </p>
                   )}
                 </div>
 
@@ -263,7 +284,8 @@ export default function Contact() {
                     htmlFor="message"
                     className="block text-sm font-semibold text-slate-700 mb-1.5"
                   >
-                    Mensaje / Descripción <span className="text-red-500">*</span>
+                    Mensaje / Descripción{" "}
+                    <span className="text-red-500">*</span>
                   </label>
                   <textarea
                     id="message"
@@ -272,18 +294,37 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Cuéntanos cómo podemos ayudarte..."
-                    className={`w-full px-4 py-3 rounded-xl border ${errors.message ? "border-red-400 focus:ring-red-400" : "border-slate-200 focus:ring-blue-600"
-                      } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm h-32 resize-none`}
+                    className={`w-full px-4 py-3 rounded-xl border ${
+                      errors.message
+                        ? "border-red-400 focus:ring-red-400"
+                        : "border-slate-200 focus:ring-blue-600"
+                    } focus:outline-none focus:ring-2 focus:border-transparent transition-all bg-white text-slate-950 placeholder-slate-400 text-sm h-32 resize-none`}
                   />
                   {errors.message && (
-                    <p className="text-red-500 text-xs mt-1 font-medium">{errors.message}</p>
+                    <p className="text-red-500 text-xs mt-1 font-medium">
+                      {errors.message}
+                    </p>
                   )}
                 </div>
 
                 {/* Server Error */}
                 {serverError && (
                   <div className="flex items-start gap-3 bg-red-50 border border-red-200 text-red-700 rounded-xl px-4 py-3 text-sm font-medium">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-5 h-5 flex-shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="8" x2="12" y2="12" />
+                      <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
                     <span>{serverError}</span>
                   </div>
                 )}
@@ -292,7 +333,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer disabled:bg-blue-400 disabled:cursor-not-allowed hover:-translate-y-0.5 active:translate-y-0"
+                  className="w-full py-4 bg-[var(--color-principal)]  text-white font-bold rounded-2xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer disabled:bg-blue-400 disabled:cursor-not-allowed hover:-translate-y-0.5 active:translate-y-0"
                 >
                   {isSubmitting ? (
                     <>

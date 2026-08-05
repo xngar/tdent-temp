@@ -87,11 +87,11 @@ export default function Footer() {
               aria-label="T-DENT — Ir al inicio"
             >
               <Image
-                src="/logo-tdent.svg"
+                src="/logo_tdent_blanco.webp"
                 alt="T-DENT Clínica Dental"
                 width={140}
                 height={48}
-                className="h-12 w-auto object-contain brightness-0 invert transition-transform duration-300 group-hover:scale-105"
+                className=""
               />
             </Link>
 
@@ -166,16 +166,16 @@ export default function Footer() {
             <h3 className="text-sm font-bold text-white uppercase tracking-widest mb-5">
               Horarios
             </h3>
-            <div className="flex items-center gap-2 mb-4">
+            {/* <div className="flex items-center gap-2 mb-4">
               <Clock className="w-4 h-4 text-blue-500" aria-hidden="true" />
               <span className="text-xs text-emerald-400 font-semibold">
                 Abierto Hoy
               </span>
-            </div>
+            </div> */}
             <ul className="space-y-3" role="list">
               {hours.map(({ day, time }) => (
                 <li key={day} className="text-sm">
-                  <span className="text-slate-400">{day}</span>
+                  <span className="text-white">{day}</span>
                   <br />
                   <span className="text-white font-medium">{time}</span>
                 </li>
@@ -188,26 +188,26 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-slate-500 text-center sm:text-left">
+          <p className="text-sm text-white text-center sm:text-left">
             © {new Date().getFullYear()} T-DENT Clínica Dental. Todos los
             derechos reservados.
           </p>
           <div className="flex items-center gap-6">
             <Link
               href="#"
-              className="text-xs text-slate-500 hover:text-slate-300 transition-colors duration-200"
+              className="text-xs text-white hover:text-slate-300 transition-colors duration-200"
             >
               Políticas de Privacidad
             </Link>
             <Link
               href="#"
-              className="text-xs text-slate-500 hover:text-slate-300 transition-colors duration-200"
+              className="text-xs text-white hover:text-slate-300 transition-colors duration-200"
             >
               Términos de Servicio
             </Link>
             <Link
               href="#"
-              className="text-xs text-slate-500 hover:text-slate-300 transition-colors duration-200"
+              className="text-xs text-white hover:text-slate-300 transition-colors duration-200"
             >
               Políticas de Cookies
             </Link>

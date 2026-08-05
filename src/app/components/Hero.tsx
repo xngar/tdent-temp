@@ -198,7 +198,7 @@ export default function Hero() {
               </div>
 
               {/* Floating card — Abierto hoy */}
-              <div className="absolute bottom-8 -right-4 lg:-right-12">
+              {/* <div className="absolute bottom-8 -right-4 lg:-right-12">
                 <div className="glass-card rounded-2xl p-4 shadow-xl min-w-[180px]">
                   <div className="flex items-center gap-3">
                     <div className="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center animate-pulse-ring">
@@ -221,7 +221,7 @@ export default function Hero() {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Floating badge — bottom left */}
               <div className="absolute -bottom-4 -left-4 lg:-left-8">
@@ -232,7 +232,7 @@ export default function Hero() {
                       aria-hidden="true"
                     />
                     <div>
-                      <p className="text-sm font-bold text-slate-800">15K+</p>
+                      <p className="text-sm font-bold text-slate-800">5K+</p>
                       <p className="text-xs text-slate-500">Casos exitosos</p>
                     </div>
                   </div>

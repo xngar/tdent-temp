@@ -61,7 +61,7 @@ export default function Navbar() {
               aria-label="T-DENT — Ir al inicio"
             >
               <Image
-                src="/logo_tdent.webp"
+                src="/logo_tdent_v2.webp"
                 alt="T-DENT Clínica Dental"
                 width={160}
                 height={56}

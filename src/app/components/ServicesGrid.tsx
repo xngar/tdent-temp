@@ -26,8 +26,7 @@ const services = [
     icon: Activity,
     color: "text-blue-600",
     bg: "bg-blue-600",
-    image:
-      "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&h=400&fit=crop",
+    image: "/implantologia.webp",
     imageAlt: "Implantes dentales unitarios y múltiples en clínica T-DENT",
     href: "#contact",
   },
@@ -45,8 +44,7 @@ const services = [
     icon: Shield,
     color: "text-blue-600",
     bg: "bg-blue-600",
-    image:
-      "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&h=400&fit=crop",
+    image: "/periodoncia.webp",
     imageAlt: "Tratamiento periodontal y destartrajes en clínica T-DENT",
     href: "#contact",
   },
@@ -66,8 +64,7 @@ const services = [
     icon: Smile,
     color: "text-blue-600",
     bg: "bg-blue-600",
-    image:
-      "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&h=400&fit=crop&crop=top",
+    image: "/rehabilitacion.webp",
     imageAlt: "Rehabilitación dental, coronas y carillas en clínica T-DENT",
     href: "#contact",
   },
@@ -85,8 +82,7 @@ const services = [
     icon: Heart,
     color: "text-blue-600",
     bg: "bg-blue-600",
-    image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop",
+    image: "/prevencion.webp",
     imageAlt: "Prevención dental, sellantes y fluoraciones en clínica T-DENT",
     href: "#contact",
   },
@@ -104,19 +100,19 @@ export default function ServicesGrid() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
           <div>
             {/* Section label */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-50 border border-blue-100 rounded-full mb-4">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-50 border border-blue-100 rounded-full mb-4">
               <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
               <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
                 Nuestros Servicios
               </span>
-            </div>
+            </div> */}
             <h2 className="text-4xl lg:text-5xl font-black text-slate-800 leading-tight">
               Cuidado Dental Completo
               <br />
               <span className="gradient-text">Para Cada Sonrisa</span>
             </h2>
           </div>
-          <Link
+          {/* <Link
             href="#contact"
             id="services-view-all"
             className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-slate-200 text-slate-600 font-semibold rounded-xl hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200 whitespace-nowrap group"
@@ -127,7 +123,7 @@ export default function ServicesGrid() {
               className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200"
               aria-hidden="true"
             />
-          </Link>
+          </Link> */}
         </div>
 
         {/* Services grid */}
@@ -161,14 +157,14 @@ export default function ServicesGrid() {
                   <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent" />
 
                   {/* Icon badge on image */}
-                  <div className="absolute bottom-4 left-4">
+                  {/* <div className="absolute bottom-4 left-4">
                     <div
                       className={`w-10 h-10 ${bg} rounded-xl flex items-center justify-center shadow-lg`}
                       aria-hidden="true"
                     >
                       <Icon className="w-5 h-5 text-white" />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Content */}
@@ -196,7 +192,7 @@ export default function ServicesGrid() {
                     ))}
                   </ul>
 
-                  <div className="pt-4 border-t border-slate-100">
+                  {/* <div className="pt-4 border-t border-slate-100">
                     <Link
                       href={href}
                       id={`service-${id}-learn-more`}
@@ -206,7 +202,7 @@ export default function ServicesGrid() {
                       Solicitar Cita
                       <ChevronRight className="w-4 h-4" aria-hidden="true" />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </article>
             ),

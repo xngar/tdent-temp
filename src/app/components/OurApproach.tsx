@@ -21,12 +21,12 @@ export default function OurApproach() {
           {/* Left — Text content */}
           <div className="space-y-8 order-2 lg:order-1">
             {/* Section label */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-50 border border-blue-100 rounded-full">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-50 border border-blue-100 rounded-full">
               <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
               <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
                 Sobre Nosotros
               </span>
-            </div>
+            </div> */}
 
             <h2 className="text-4xl lg:text-5xl font-black text-slate-800 leading-tight">
               Odontología de Calidad{" "}
@@ -35,10 +35,16 @@ export default function OurApproach() {
 
             <div className="space-y-4 text-slate-500 leading-relaxed max-w-lg">
               <p>
-                Fundada en 2013 por el <strong>Dr. Hernán Toro Alvear</strong> (especialista en Implantología Oral de la U. de Chile), T-DENT nació en Santiago Centro y hoy atiende en su moderno consultorio de <strong>Plaza Egaña</strong>.
+                Fundada en 2013 por el <strong>Dr. Hernán Toro Alvear</strong>{" "}
+                (especialista en Implantología Oral de la U. de Chile), T-DENT
+                nació en Santiago Centro y hoy atiende en su moderno consultorio
+                de <strong>Plaza Egaña</strong>.
               </p>
               <p>
-                Combinamos altos estándares de calidad, un entorno tranquilo y accesible, e instalaciones autorizadas sanitariamente para entregar tratamientos seguros tanto preventivos como correctivos para toda la familia.
+                Combinamos altos estándares de calidad, un entorno tranquilo y
+                accesible, e instalaciones autorizadas sanitariamente para
+                entregar tratamientos seguros tanto preventivos como correctivos
+                para toda la familia.
               </p>
             </div>
 
@@ -56,7 +62,7 @@ export default function OurApproach() {
             </ul>
 
             {/* CTA */}
-            <Link
+            {/* <Link
               href="#contact"
               id="approach-learn-more"
               className="inline-flex items-center gap-2 px-6 py-3 border-2 border-slate-200 text-slate-700 font-semibold rounded-2xl hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200 group"
@@ -67,7 +73,7 @@ export default function OurApproach() {
                 className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
                 aria-hidden="true"
               />
-            </Link>
+            </Link> */}
           </div>
 
           {/* Right — Image + floating stat */}
@@ -93,7 +99,9 @@ export default function OurApproach() {
                     <Award className="w-6 h-6 text-white" aria-hidden="true" />
                   </div>
                   <div>
-                    <p className="text-2xl font-black text-slate-800">10+ Años</p>
+                    <p className="text-2xl font-black text-slate-800">
+                      10+ Años
+                    </p>
                     <p className="text-sm text-slate-500 font-medium">
                       De Experiencia y Confianza
                     </p>
