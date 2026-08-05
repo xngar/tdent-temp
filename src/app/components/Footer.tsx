@@ -72,7 +72,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="bg-slate-900 text-slate-300"
+      className="bg-[var(--color-principal)] text-white"
       role="contentinfo"
     >
       {/* Main footer content */}
@@ -95,7 +95,7 @@ export default function Footer() {
               />
             </Link>
 
-            <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
+            <p className="text-white text-sm leading-relaxed max-w-xs">
               Atención odontológica personalizada y de calidad desde 2013.
               Ubicados en Plaza Egaña con instalaciones autorizadas por la
               Seremi de Salud.
@@ -122,7 +122,7 @@ export default function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="flex items-start gap-3 text-sm text-slate-400 hover:text-blue-400 transition-colors duration-200 group"
+                  className="flex items-start gap-3 text-sm text-white hover:text-blue-400 transition-colors duration-200 group"
                 >
                   <div className="w-8 h-8 bg-slate-800 group-hover:bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 transition-colors duration-200">
                     <Icon
@@ -151,7 +151,7 @@ export default function Footer() {
                   <li key={label}>
                     <Link
                       href={href}
-                      className="text-sm text-slate-400 hover:text-blue-400 transition-colors duration-200 hover:translate-x-1 inline-block transition-transform"
+                      className="text-sm text-white hover:text-blue-400 transition-colors duration-200 hover:translate-x-1 inline-block transition-transform"
                     >
                       {label}
                     </Link>
@@ -186,7 +186,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-slate-800">
+      <div className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500 text-center sm:text-left">
             © {new Date().getFullYear()} T-DENT Clínica Dental. Todos los

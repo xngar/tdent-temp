@@ -88,13 +88,13 @@ export default function Hero() {
               <Link
                 href="#contact"
                 id="hero-book-appointment"
-                className="btn-primary inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-2xl shadow-lg"
+                className="btn-primary inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-principal)] text-white font-semibold rounded-2xl shadow-lg"
                 aria-label="Agenda tu consulta en T-DENT"
               >
                 Agenda tu consulta
                 <ChevronRight className="w-5 h-5" aria-hidden="true" />
               </Link>
-              <Link
+              {/* <Link
                 href="#about"
                 id="hero-our-services"
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/80 border border-slate-200 text-slate-700 font-semibold rounded-2xl hover:bg-white hover:shadow-md transition-all duration-200"
@@ -102,13 +102,13 @@ export default function Hero() {
               >
                 Conoce nuestra historia
                 <ChevronRight className="w-5 h-5" aria-hidden="true" />
-              </Link>
+              </Link> */}
             </div>
 
             {/* Trusted patients */}
             <div className="flex items-center gap-4">
               {/* Avatars */}
-              <div
+              {/* <div
                 className="flex -space-x-3"
                 aria-label="Avatares de pacientes satisfechos"
               >
@@ -127,8 +127,8 @@ export default function Hero() {
                     />
                   </div>
                 ))}
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <div className="flex items-center gap-1 mb-0.5">
                   {[...Array(5)].map((_, i) => (
                     <svg
@@ -148,7 +148,7 @@ export default function Hero() {
                   </span>{" "}
                   Pacientes satisfechos ❤️
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
 

@@ -61,7 +61,7 @@ export default function Navbar() {
               aria-label="T-DENT — Ir al inicio"
             >
               <Image
-                src="/logo-tdent.svg"
+                src="/logo_tdent.webp"
                 alt="T-DENT Clínica Dental"
                 width={160}
                 height={56}
@@ -71,10 +71,7 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop navigation */}
-            <ul
-              className="hidden lg:flex items-center gap-1"
-              role="list"
-            >
+            <ul className="hidden lg:flex items-center gap-1" role="list">
               {navLinks.map(({ href, label }) => (
                 <li key={href}>
                   <Link
@@ -93,7 +90,7 @@ export default function Navbar() {
             </ul>
 
             {/* CTA button */}
-            <div className="hidden lg:flex items-center gap-4">
+            {/* <div className="hidden lg:flex items-center gap-4">
               <Link
                 href="#contact"
                 id="nav-book-appointment"
@@ -116,7 +113,7 @@ export default function Navbar() {
                   />
                 </svg>
               </Link>
-            </div>
+            </div> */}
 
             {/* Mobile hamburger */}
             <button
@@ -157,7 +154,7 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-            <div className="mt-4 pt-4 border-t border-slate-100">
+            {/* <div className="mt-4 pt-4 border-t border-slate-100">
               <Link
                 href="#contact"
                 onClick={closeMobileMenu}
@@ -180,7 +177,7 @@ export default function Navbar() {
                   />
                 </svg>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>
