@@ -224,7 +224,7 @@ export default function Hero() {
               </div> */}
 
               {/* Floating badge — bottom left */}
-              <div className="absolute -bottom-4 -left-4 lg:-left-8">
+              {/* <div className="absolute -bottom-4 -left-4 lg:-left-8">
                 <div className="glass-card rounded-2xl p-3.5 shadow-xl">
                   <div className="flex items-center gap-2.5">
                     <CheckCircle
@@ -237,7 +237,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
