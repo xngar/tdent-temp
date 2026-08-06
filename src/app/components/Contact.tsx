@@ -264,7 +264,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+56 9 8373 8418"
+                    placeholder="+56 9 9999 1111"
                     className={`w-full px-4 py-3 rounded-xl border ${
                       errors.phone
                         ? "border-red-400 focus:ring-red-400"

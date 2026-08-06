@@ -25,8 +25,8 @@ export async function POST(request: NextRequest) {
 
     const { data, error } = await resend.emails.send({
       from: "T-DENT Contacto <onboarding@resend.dev>",
-      to: ["mantonio.zr@gmail.com"],
-      subject: `T-DENT Nuevo mensaje de contacto de ${name}`,
+      to: ["clinicadentaltdent@gmail.com"],
+      subject: `T-DENT Consulta: ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8fafc; border-radius: 12px;">
           <div style="background-color: #2563eb; padding: 24px; border-radius: 8px 8px 0 0; text-align: center;">

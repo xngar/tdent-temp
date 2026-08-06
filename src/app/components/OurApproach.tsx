@@ -4,9 +4,10 @@ import { CheckCircle2, Award, ChevronRight } from "lucide-react";
 
 const checkItems = [
   "Instalaciones de primer nivel autorizadas por la Seremi de Salud",
-  "Atención personalizada guiada por el Dr. Hernán Toro",
-  "Ubicación en Plaza Egaña (La Reina / Ñuñoa), en Edificio Egaña Oficinas",
-  "Facilidades de pago: 3 a 12 cuotas sin interés (tarjetas, transferencias, cheques)",
+  "Atención personalizada guiada por el Dr. Hernán Toro Alvear (Periodoncista)",
+  "Ubicada en Plaza Egaña (La Reina / Ñuñoa), en Edificio Egaña Oficinas",
+  "Métodos de pago con transferencia, efectivo, cheque o tarjetas",
+  "Planes de pago según el costo de tu tratamiento, con 3 a 12 cuotas sin interés pagando con tarjeta de crédito o débito",
 ];
 
 export default function OurApproach() {

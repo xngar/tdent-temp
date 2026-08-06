@@ -15,7 +15,7 @@ const services = [
     id: "implantologia",
     title: "Implantología",
     description:
-      "Soluciones permanentes y quirúrgicas de última generación para restaurar la estética y funcionalidad de tu sonrisa.",
+      "Soluciones fijas y quirúrgicas de última generación para restaurar la estética y funcionalidad de tu sonrisa.",
     items: [
       "Implantes dentales unitarios y múltiples",
       "Prótesis totales fijas sobre implantes",

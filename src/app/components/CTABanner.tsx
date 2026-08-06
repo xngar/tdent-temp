@@ -58,7 +58,7 @@ export default function CTABanner() {
                   ¿Listo para lucir una sonrisa{" "}
                   <span className="text-blue-200">más sana y radiante?</span>
                 </h2>
-                <p className="text-blue-100 text-lg leading-relaxed">
+                {/* <p className="text-blue-100 text-lg leading-relaxed">
                   En <span className="font-bold text-white">T-DENT</span> te
                   atendemos con tecnología de vanguardia en un ambiente cálido y
                   sin dolor. Agenda hoy en nuestra clínica de{" "}
@@ -66,11 +66,16 @@ export default function CTABanner() {
                     Plaza Egaña, La Reina
                   </span>
                   .
+                </p> */}
+                <p className="text-blue-100 text-lg leading-relaxed">
+                  Ven a t dent, conoce nuestro cálido y confortable ambiente.
+                  Dale una solución definitiva a tu problema dental. Agenda hoy
+                  en nuestra clínica ubicada en avenida ossa 235, la reina
                 </p>
               </div>
 
               {/* Stats row */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-6 mt-2">
+              {/* <div className="flex flex-wrap justify-center lg:justify-start gap-6 mt-2">
                 {stats.map(({ icon: Icon, value, label }) => (
                   <div key={label} className="flex items-center gap-2.5">
                     <div className="w-9 h-9 bg-white/15 rounded-xl flex items-center justify-center border border-white/20">
@@ -87,13 +92,13 @@ export default function CTABanner() {
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             {/* CTA buttons */}
             <div className="flex-shrink-0 flex flex-col sm:flex-row lg:flex-col gap-4 w-full sm:w-auto lg:w-auto">
               {/* Primary — Agenda tu cita */}
-              <Link
+              {/* <Link
                 href="#contact"
                 id="cta-banner-book"
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-blue-700 font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl hover:bg-blue-50 transition-all duration-200 hover:-translate-y-1 group"
@@ -105,10 +110,10 @@ export default function CTABanner() {
                   className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
                   aria-hidden="true"
                 />
-              </Link>
+              </Link> */}
 
               {/* Secondary — WhatsApp */}
-              <Link
+              {/* <Link
                 href="https://wa.me/56983738418?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20en%20T-DENT"
                 id="cta-banner-whatsapp"
                 target="_blank"
@@ -118,10 +123,10 @@ export default function CTABanner() {
               >
                 <MessageCircle className="w-5 h-5" aria-hidden="true" />
                 Escríbenos por WhatsApp
-              </Link>
+              </Link> */}
 
               {/* Phone hint */}
-              <p className="text-blue-200 text-sm text-center lg:text-center">
+              {/* <p className="text-blue-200 text-sm text-center lg:text-center">
                 O llámanos al{" "}
                 <Link
                   href="tel:+56983738418"
@@ -130,7 +135,7 @@ export default function CTABanner() {
                 >
                   +56 9 8373 8418
                 </Link>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

@@ -184,10 +184,10 @@ export default function Hero() {
                     </div>
                     <div>
                       <p className="text-sm font-bold text-slate-800">
-                        Tratamiento
+                        Tratamientos
                       </p>
                       <p className="text-sm font-bold text-slate-800">
-                        sin dolor
+                        confortables
                       </p>
                     </div>
                   </div>
