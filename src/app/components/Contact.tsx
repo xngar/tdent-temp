@@ -333,7 +333,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-[var(--color-principal)]  text-white font-bold rounded-2xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer disabled:bg-blue-400 disabled:cursor-not-allowed hover:-translate-y-0.5 active:translate-y-0"
+                  className="w-full py-4 bg-principal  text-white font-bold rounded-2xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer disabled:bg-blue-400 disabled:cursor-not-allowed hover:-translate-y-0.5 active:translate-y-0"
                 >
                   {isSubmitting ? (
                     <>
