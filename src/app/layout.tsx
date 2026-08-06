@@ -67,10 +67,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  icons: {
-    icon: "/logo-tdent.svg",
-    apple: "/logo-tdent.svg",
-  },
 };
 
 // JSON-LD structured data

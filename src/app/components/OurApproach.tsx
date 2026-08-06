@@ -7,7 +7,7 @@ const checkItems = [
   "Atención personalizada guiada por el Dr. Hernán Toro Alvear (Periodoncista)",
   "Ubicada en Plaza Egaña (La Reina / Ñuñoa), en Edificio Egaña Oficinas",
   "Métodos de pago con transferencia, efectivo, cheque o tarjetas",
-  "Planes de pago según el costo de tu tratamiento, con 3 a 12 cuotas sin interés pagando con tarjeta de crédito o débito",
+  "Planes de pago según el costo de tu tratamiento, con 3 a 12 cuotas sin interés pagando con tarjeta de crédito",
 ];
 
 export default function OurApproach() {
