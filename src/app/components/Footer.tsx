@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import LegalModals from "./LegalModals";
 import {
   Phone,
   Mail,
@@ -191,26 +192,7 @@ export default function Footer() {
             © {new Date().getFullYear()} T-DENT Clínica Dental. Todos los
             derechos reservados.
           </p>
-          <div className="flex items-center gap-6">
-            <Link
-              href="#"
-              className="text-xs text-white hover:text-slate-300 transition-colors duration-200"
-            >
-              Políticas de Privacidad
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-white hover:text-slate-300 transition-colors duration-200"
-            >
-              Términos de Servicio
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-white hover:text-slate-300 transition-colors duration-200"
-            >
-              Políticas de Cookies
-            </Link>
-          </div>
+          <LegalModals />
         </div>
       </div>
     </footer>
