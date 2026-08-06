@@ -20,6 +20,11 @@ export default function CookieConsent() {
     localStorage.setItem("cookieConsent", "true");
     setShow(false);
   };
+
+  const reject = () => {
+    localStorage.setItem("cookieConsent", "false");
+    setShow(false);
+  };
   
   const openCookiePolicy = () => {
     window.dispatchEvent(new CustomEvent("openLegalModal", { detail: "cookies" }));
@@ -39,12 +44,18 @@ export default function CookieConsent() {
             Política de Cookies
           </button>.
         </div>
-        <div className="flex gap-3 w-full sm:w-auto shrink-0">
+        <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto shrink-0">
+          <button 
+            onClick={reject} 
+            className="w-full sm:w-auto bg-transparent border border-slate-700 hover:bg-slate-800 text-slate-300 px-6 py-2.5 rounded-lg text-sm font-semibold transition-all focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-slate-900"
+          >
+            Rechazar
+          </button>
           <button 
             onClick={accept} 
             className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white px-8 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-lg hover:shadow-blue-500/25 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-900"
           >
-            Entendido
+            Aceptar
           </button>
         </div>
       </div>
