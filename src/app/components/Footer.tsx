@@ -17,7 +17,6 @@ const footerLinks = {
     { label: "Periodoncia", href: "#services" },
     { label: "Rehabilitación", href: "#services" },
     { label: "Prevención", href: "#services" },
-    { label: "Radiología", href: "#services" },
     { label: "Urgencias", href: "#services" },
   ],
   Clínica: [
@@ -26,12 +25,12 @@ const footerLinks = {
     { label: "Historia T-DENT", href: "#about" },
     { label: "Contacto", href: "#contact" },
   ],
-  Recursos: [
-    { label: "Facilidades de Pago", href: "#about" },
-    { label: "Educación y Consejos", href: "#about" },
-    { label: "Urgencias Dentales", href: "#services" },
-    { label: "Preguntas Frecuentes", href: "#" },
-  ],
+  // Recursos: [
+  //   { label: "Facilidades de Pago", href: "#about" },
+  //   { label: "Educación y Consejos", href: "#about" },
+  //   { label: "Urgencias Dentales", href: "#services" },
+  //   { label: "Preguntas Frecuentes", href: "#" },
+  // ],
 };
 
 const socialLinks = [

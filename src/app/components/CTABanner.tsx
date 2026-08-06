@@ -19,7 +19,7 @@ export default function CTABanner() {
   return (
     <section
       aria-label="Llamada a la acción — Agenda tu cita en T-DENT"
-      className="py-20 lg:py-28 bg-white"
+      className="py-20 lg:py-28 bg-white "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[var(--color-principal)]  to-[var(--color-secundario)] px-8 py-16 lg:px-20 lg:py-20">
@@ -41,9 +41,9 @@ export default function CTABanner() {
             aria-hidden="true"
           />
 
-          <div className="relative flex flex-col lg:flex-row items-center justify-between gap-12">
+          <div className="relative flex flex-col items-center justify-center text-center gap-8">
             {/* Icon + text */}
-            <div className="flex flex-col items-center lg:items-start gap-6 text-center lg:text-left max-w-2xl">
+            <div className="flex flex-col items-center gap-6 text-center max-w-2xl">
               {/* Icon badge */}
               <div className="w-16 h-16 bg-white/15 backdrop-blur-sm rounded-2xl flex items-center justify-center flex-shrink-0 border border-white/20">
                 <Stethoscope
