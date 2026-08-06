@@ -40,18 +40,17 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
             ? "bg-white/95 backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.08)]"
             : "bg-white/80 backdrop-blur-sm"
-        }`}
+          }`}
         role="banner"
       >
         <nav
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
           aria-label="Navegación principal"
         >
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-20 lg:h-24">
             {/* Logo */}
             <Link
               href="/"
@@ -61,10 +60,10 @@ export default function Navbar() {
               <Image
                 src="/logo_tdent_v2.webp"
                 alt="T-DENT Clínica Dental"
-                width={160}
-                height={56}
+                width={200}
+                height={80}
                 priority
-                className="h-12 lg:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                className="h-[68px] lg:h-[76px] w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
 
@@ -75,11 +74,10 @@ export default function Navbar() {
                   <Link
                     href={href}
                     onClick={() => setActiveSection(href.slice(1))}
-                    className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
-                      activeSection === href.slice(1)
+                    className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${activeSection === href.slice(1)
                         ? "text-blue-600 bg-blue-50"
                         : "text-slate-600 hover:text-blue-600 hover:bg-slate-50"
-                    }`}
+                      }`}
                   >
                     {label}
                   </Link>
@@ -133,9 +131,8 @@ export default function Navbar() {
         {/* Mobile menu */}
         <div
           id="mobile-menu"
-          className={`lg:hidden transition-all duration-300 overflow-hidden ${
-            isMobileOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-          }`}
+          className={`lg:hidden transition-all duration-300 overflow-hidden ${isMobileOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+            }`}
           aria-hidden={!isMobileOpen}
         >
           <div className="bg-white border-t border-slate-100 px-4 py-4 shadow-lg">
