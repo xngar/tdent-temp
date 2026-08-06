@@ -4,7 +4,7 @@ import { CheckCircle2, Award, ChevronRight } from "lucide-react";
 
 const checkItems = [
   "Instalaciones de primer nivel autorizadas por la Seremi de Salud",
-  "Atención personalizada guiada por el Dr. Hernán Toro Alvear (Periodoncista)",
+  "Atención personalizada guiada por el Dr. Hernán Toro Alvear",
   "Ubicada en Plaza Egaña (La Reina / Ñuñoa), en Edificio Egaña Oficinas",
   "Métodos de pago con transferencia, efectivo, cheque o tarjetas",
   "Planes de pago según el costo de tu tratamiento, con 3 a 12 cuotas sin interés pagando con tarjeta de crédito",
@@ -37,7 +37,7 @@ export default function OurApproach() {
             <div className="space-y-4 text-slate-500 leading-relaxed max-w-lg">
               <p>
                 Fundada en 2013 por el <strong>Dr. Hernán Toro Alvear</strong>{" "}
-                (especialista en Implantología Oral de la U. de Chile), T-DENT
+                (especialista en Implantología Oral de la U. de Chile) y el <strong>Dr. Hernán Toro Castillo</strong> especialista en periodoncia de la universidad de Chile, T-DENT
                 nació en Santiago Centro y hoy atiende en su moderno consultorio
                 de <strong>Plaza Egaña</strong>.
               </p>
@@ -81,7 +81,7 @@ export default function OurApproach() {
           <div className="relative order-1 lg:order-2">
             <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
               <Image
-                src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&h=700&fit=crop"
+                src="/scan.webp"
                 alt="Consultorio dental moderno de T-DENT en Edificio Egaña Oficinas"
                 width={640}
                 height={560}
