@@ -37,12 +37,12 @@ export default function OurApproach() {
             <div className="space-y-4 text-slate-500 leading-relaxed max-w-lg">
               <p>
                 Fundada en 2013 por el <strong>Dr. Hernán Toro Alvear</strong>{" "}
-                (especialista en Implantología Oral de la U. de Chile) y el <strong>Dr. Hernán Toro Castillo</strong> (especialista en periodoncia de la universidad de Chile), T-DENT
+                (especialista en Implantología Oral de la Universidad de Chile) y el <strong>Dr. Hernán Toro Castillo</strong> (especialista en Periodoncia de la Universidad de Chile), T-DENT
                 nació en Santiago Centro y hoy atiende en su moderno consultorio
                 de <strong>Plaza Egaña</strong>.
               </p>
               <p>
-                Combinamos altos estándares de calidad, un entorno tranquilo y
+                En T-DENT combinamos altos estándares de calidad, un entorno tranquilo y
                 accesible, e instalaciones autorizadas sanitariamente para
                 entregar tratamientos seguros tanto preventivos como correctivos
                 para toda la familia.
