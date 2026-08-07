@@ -18,7 +18,7 @@ const stats = [
 export default function CTABanner() {
   return (
     <section
-      aria-label="Llamada a la acción — Agenda tu cita en T-DENT"
+      aria-label="Llamada a la acción — Agenda tu cita en TDENT"
       className="py-20 lg:py-28 bg-white "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -68,9 +68,9 @@ export default function CTABanner() {
                   .
                 </p> */}
                 <p className="text-blue-100 text-lg leading-relaxed">
-                  Ven a t dent, conoce nuestro cálido y confortable ambiente.
+                  Ven a TDENT, conoce nuestro cálido y confortable ambiente.
                   Dale una solución definitiva a tu problema dental. Agenda hoy
-                  en nuestra clínica ubicada en avenida ossa 235, la reina
+                  en nuestra clínica ubicada en Avenida Ossa 235, La Reina.
                 </p>
               </div>
 

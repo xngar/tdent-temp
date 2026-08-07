@@ -15,7 +15,7 @@ const services = [
     id: "implantologia",
     title: "Implantología",
     description:
-      "Soluciones fijas y quirúrgicas de última generación para restaurar la estética y funcionalidad de tu sonrisa.",
+      "Soluciones fijas de última generación para restaurar la estética y funcionalidad de tu sonrisa.",
     items: [
       "Implantes dentales unitarios y múltiples",
       "Prótesis totales fijas sobre implantes",
@@ -219,8 +219,8 @@ export default function ServicesGrid() {
               Centro de Radiología e Imagenología y Derivaciones
             </h4>
             <p className="text-sm text-slate-600 leading-relaxed">
-              En nuestro edificio hay un centro de radiología e imaginología, lo
-              que facilita el flujo de tus diagnósticos y tratamientos. Contamos
+              En nuestro edificio hay un centro de radiología e imagenología, lo
+              que facilita el flujo de tus diagnósticos y tratamientos.<br></br> Contamos
               con una completa red de derivaciones con profesionales de
               excelencia para especialidades odontológicas complementarias a
               nuestros servicios, como por ejemplo:{" "}
