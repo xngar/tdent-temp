@@ -82,11 +82,12 @@ export default function OurApproach() {
             <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
               <Image
                 src="/scan.webp"
-                alt="Consultorio dental moderno de T-DENT en Edificio Egaña Oficinas"
+                alt="Consultorio dental moderno de T-DENT en Edificio Egaña Oficinas, Plaza Egaña La Reina"
                 width={640}
                 height={560}
                 className="w-full h-auto object-cover"
                 quality={85}
+                loading="lazy"
               />
               {/* Blue gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 to-transparent" />

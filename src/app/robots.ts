@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/"],
       },
     ],
-    sitemap: "https://tdent.com/sitemap.xml",
-    host: "https://tdent.com",
+    sitemap: "https://clinicatdent.cl/sitemap.xml",
+    host: "https://clinicatdent.cl",
   };
 }

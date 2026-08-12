@@ -146,12 +146,13 @@ export default function ServicesGrid() {
               >
                 {/* Image */}
                 <div className="relative overflow-hidden h-48">
-                  <Image
+                <Image
                     src={image}
                     alt={imageAlt}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="service-card-image object-cover"
+                    loading="lazy"
                   />
                   {/* Gradient overlay */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent" />

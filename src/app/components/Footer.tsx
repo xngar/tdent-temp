@@ -88,10 +88,10 @@ export default function Footer() {
             >
               <Image
                 src="/logo_tdent_blanco.webp"
-                alt="T-DENT Clínica Dental"
+                alt="T-DENT Clínica Dental — Logo"
                 width={140}
                 height={48}
-                className=""
+                loading="lazy"
               />
             </Link>
 

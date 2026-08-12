@@ -10,7 +10,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tdent.com"),
+  metadataBase: new URL("https://clinicatdent.cl"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "T-DENT | Clínica Dental Profesional — Tu Sonrisa, Nuestra Pasión",
     template: "%s | T-DENT Clínica Dental",
@@ -32,8 +35,8 @@ export const metadata: Metadata = {
   publisher: "T-DENT",
   openGraph: {
     type: "website",
-    locale: "es_ES",
-    url: "https://tdent.com",
+    locale: "es_CL",
+    url: "https://clinicatdent.cl",
     siteName: "T-DENT Clínica Dental",
     title: "T-DENT | Clínica Dental Profesional — Tu Sonrisa, Nuestra Pasión",
     description:
@@ -75,8 +78,12 @@ const jsonLd = {
   "@type": "Dentist",
   name: "T-DENT Clínica Dental",
   description:
-    "Clínica dental profesional con más de 15,000 tratamientos exitosos.",
-  url: "https://tdent.com",
+    "Clínica dental profesional en La Reina con más de 15,000 tratamientos exitosos.",
+  url: "https://clinicatdent.cl",
+  image: "https://clinicatdent.cl/foto-interior.clinica.webp",
+  sameAs: [
+    "https://www.instagram.com/clinicadentaltdent"
+  ],
   telephone: "+56 9 8373 8418",
   email: "clinicadentaltdent@gmail.com",
   address: {
@@ -113,6 +120,15 @@ const jsonLd = {
   },
   priceRange: "$$",
   medicalSpecialty: "Dentistry",
+  hasMap: "https://maps.google.com/?q=Av.+Ossa+235+of+835,+la+reina,+Chile",
+  areaServed: [
+    { "@type": "City", name: "La Reina" },
+    { "@type": "City", name: "Ñuñoa" },
+    { "@type": "City", name: "Peñalolén" },
+    { "@type": "City", name: "Santiago" },
+  ],
+  currenciesAccepted: "CLP",
+  paymentAccepted: "Cash, Credit Card, Bank Transfer",
 };
 
 export default function RootLayout({
