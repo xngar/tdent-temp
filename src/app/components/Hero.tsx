@@ -184,16 +184,16 @@ export default function Hero() {
                     </div>
                     <div>
                       <p className="text-sm font-bold text-slate-800">
-                        Tratamientos
+                        Tus dientes son únicos
                       </p>
-                      <p className="text-sm font-bold text-slate-800">
-                        confortables
+                      <p className="text-xs text-slate-500 leading-snug">
+                        Te ayudaremos a mantenerlos <br></br>el mayor tiempo posible
                       </p>
                     </div>
                   </div>
-                  <p className="text-xs text-slate-500 leading-snug">
-                    Tecnología moderna para cuidados cómodos y eficientes
-                  </p>
+                  {/* <p className="text-xs text-slate-500 leading-snug">
+
+                  </p> */}
                 </div>
               </div>
 
