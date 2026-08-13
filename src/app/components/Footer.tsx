@@ -96,9 +96,9 @@ export default function Footer() {
             </Link>
 
             <p className="text-white text-sm leading-relaxed max-w-xs">
-              Atención odontológica personalizada y de calidad desde 2013.
-              Ubicados en Plaza Egaña con instalaciones autorizadas por la
-              Seremi de Salud.
+              Clínica dental especializada en Plaza Egaña desde 2013.
+              Especialistas en Implantología y Periodoncia, atendiendo pacientes de
+              <strong className="font-semibold"> La Reina, Ñuñoa, Peñalolén</strong> y toda la zona oriente de Santiago. Instalaciones autorizadas por la Seremi de Salud.
             </p>
 
             {/* Social links */}

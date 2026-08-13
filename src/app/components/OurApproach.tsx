@@ -4,10 +4,10 @@ import { CheckCircle2, Award, ChevronRight } from "lucide-react";
 
 const checkItems = [
   "Instalaciones de primer nivel autorizadas por la Seremi de Salud",
-  "Atención personalizada guiada por el Dr. Hernán Toro Alvear",
-  "Ubicada en Plaza Egaña (La Reina / Ñuñoa), en Edificio Egaña Oficinas",
+  "Especialistas en Implantología y Periodoncia de la Universidad de Chile",
+  "Ubicada en Plaza Egaña (Límite La Reina / Ñuñoa), acceso Metro L3 y L4",
   "Métodos de pago con transferencia, efectivo, cheque o tarjetas",
-  "Planes de pago según el costo de tu tratamiento, con 3 a 12 cuotas sin interés pagando con tarjeta de crédito",
+  "Planes de pago de 3 a 12 cuotas sin interés pagando con tarjeta de crédito",
 ];
 
 export default function OurApproach() {
@@ -37,15 +37,14 @@ export default function OurApproach() {
             <div className="space-y-4 text-slate-500 leading-relaxed max-w-lg">
               <p>
                 Fundada en 2013 por el <strong>Dr. Hernán Toro Alvear</strong>{" "}
-                (especialista en Implantología Oral de la Universidad de Chile) y el <strong>Dr. Hernán Toro Castillo</strong> (especialista en Periodoncia de la Universidad de Chile), T-DENT
+                (especialista en Implantología Oral, Universidad de Chile) y el <strong>Dr. Hernán Toro Castillo</strong> (especialista en Periodoncia, Universidad de Chile), T-DENT
                 nació en Santiago Centro y hoy atiende en su moderno consultorio
-                de <strong>Plaza Egaña</strong>.
+                de <strong>Plaza Egaña</strong>, en el límite de las comunas de <strong>La Reina</strong> y <strong>Ñuñoa</strong>.
               </p>
               <p>
-                En T-DENT combinamos altos estándares de calidad, un entorno tranquilo y
-                accesible, e instalaciones autorizadas sanitariamente para
-                entregar tratamientos seguros tanto preventivos como correctivos
-                para toda la familia.
+                Combinamos altos estándares de calidad e instalaciones autorizadas sanitariamente
+                para entregar tratamientos seguros — tanto preventivos como correctivos — 
+                para toda la familia. Atendemos pacientes de <strong>La Reina, Ñuñoa, Peñalolén, Macul</strong> y toda la zona oriente de Santiago.
               </p>
             </div>
 

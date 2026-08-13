@@ -120,7 +120,9 @@ export default function Contact() {
             <p className="text-blue-100 text-sm leading-relaxed font-medium">
               Av. Ossa 235 of 835,
               <br />
-              La Reina, Santiago, Chile
+              Plaza Egaña — La Reina, Santiago
+              <br />
+              <span className="text-blue-200 text-xs">A pasos del Metro L3 y L4</span>
             </p>
           </div>
 

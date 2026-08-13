@@ -73,8 +73,8 @@ export default function Hero() {
               <span className="font-semibold text-slate-800">
                 atención personalizada
               </span>{" "}
-              y<span className="gradient-text"> tecnología de vanguardia</span>{" "}
-              en un entorno moderno, tranquilo y accesible.
+              y{" "}<span className="gradient-text">tecnología de vanguardia</span>{" "}
+              en <strong className="text-slate-700">Plaza Egaña, La Reina</strong> — a pasos del Metro, atendiendo pacientes de <strong className="text-slate-700">Ñuñoa, Peñalolén y toda la zona oriente</strong>.
             </p>
 
             {/* Short description */}

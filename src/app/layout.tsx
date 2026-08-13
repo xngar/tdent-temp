@@ -15,20 +15,25 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   title: {
-    default: "T-DENT | Clínica Dental Profesional — Tu Sonrisa, Nuestra Pasión",
-    template: "%s | T-DENT Clínica Dental",
+    default: "T-DENT | Clínica Dental en La Reina y Ñuñoa — Plaza Egaña, Santiago",
+    template: "%s | T-DENT Clínica Dental La Reina",
   },
   description:
-    "T-DENT ofrece atención dental de primer nivel: implantes, odontología cosmética, ortodoncia y más. Agenda tu cita hoy y descubre por qué más de 10,000 pacientes confían en nosotros.",
+    "Clínica dental especializada en La Reina y Ñuñoa, Plaza Egaña. Implantología y Periodoncia con especialistas de la U. de Chile. Más de 10 años de experiencia. Agenda tu cita hoy.",
   keywords: [
-    "clínica dental",
+    "clínica dental La Reina",
+    "dentista La Reina",
+    "clínica dental Ñuñoa",
+    "dentista Ñuñoa",
+    "clínica dental Plaza Egaña",
+    "implantes dentales La Reina",
+    "implantes dentales Ñuñoa",
+    "periodoncia La Reina",
+    "urgencia dental La Reina",
+    "blanqueamiento dental La Reina",
     "T-DENT",
-    "dentista",
-    "implantes dentales",
-    "ortodoncia",
-    "odontología cosmética",
-    "blanqueamiento dental",
-    "dentista profesional",
+    "odontología Santiago",
+    "dentista zona oriente Santiago",
   ],
   authors: [{ name: "T-DENT Clínica Dental" }],
   creator: "T-DENT",
@@ -38,9 +43,9 @@ export const metadata: Metadata = {
     locale: "es_CL",
     url: "https://clinicatdent.cl",
     siteName: "T-DENT Clínica Dental",
-    title: "T-DENT | Clínica Dental Profesional — Tu Sonrisa, Nuestra Pasión",
+    title: "T-DENT | Clínica Dental en La Reina y Ñuñoa, Plaza Egaña",
     description:
-      "Atención dental experta con la última tecnología. Agenda tu cita en T-DENT hoy.",
+      "Especialistas en implantología y periodoncia en Plaza Egaña, La Reina. Más de 10 años cuidando sonrisas en Santiago. Agenda tu cita hoy.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&h=630&fit=crop",
@@ -52,9 +57,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "T-DENT | Clínica Dental Profesional",
+    title: "T-DENT | Clínica Dental La Reina y Ñuñoa",
     description:
-      "Atención dental experta con la última tecnología. Agenda tu cita en T-DENT hoy.",
+      "Especialistas en implantología y periodoncia en Plaza Egaña, La Reina. Agenda tu cita hoy.",
     images: [
       "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&h=630&fit=crop",
     ],
@@ -78,7 +83,7 @@ const jsonLd = {
   "@type": "Dentist",
   name: "T-DENT Clínica Dental",
   description:
-    "Clínica dental profesional en La Reina con más de 15,000 tratamientos exitosos.",
+    "Clínica dental especializada en La Reina y Ñuñoa, ubicada en Plaza Egaña (Av. Ossa 235, of. 835). Especialistas en Implantología Oral y Periodoncia graduados de la Universidad de Chile, con más de 10 años y 15,000 tratamientos exitosos atendiendo a pacientes de La Reina, Ñuñoa, Peñalolén y toda la zona oriente de Santiago.",
   url: "https://clinicatdent.cl",
   image: "https://clinicatdent.cl/foto-interior.clinica.webp",
   sameAs: [
