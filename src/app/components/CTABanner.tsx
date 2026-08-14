@@ -8,6 +8,7 @@ import {
   Users,
   Star,
 } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 const stats = [
   { icon: Users, value: "5.000+", label: "Pacientes satisfechos" },
@@ -22,7 +23,8 @@ export default function CTABanner() {
       className="py-20 lg:py-28 bg-white "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[var(--color-principal)]  to-[var(--color-secundario)] px-8 py-16 lg:px-20 lg:py-20">
+        <ScrollReveal direction="up" duration={950} distance="60px" scale={0.96}>
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[var(--color-principal)]  to-[var(--color-secundario)] px-8 py-16 lg:px-20 lg:py-20">
           {/* Decorative circles */}
           <div
             className="absolute -top-16 -right-16 w-64 h-64 bg-white/5 rounded-full"
@@ -139,6 +141,7 @@ export default function CTABanner() {
             </div>
           </div>
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );
