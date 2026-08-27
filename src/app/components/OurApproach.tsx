@@ -4,7 +4,7 @@ import { CheckCircle2, Award, ChevronRight } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const checkItems = [
-  "Instalaciones de primer nivel autorizadas por la Seremi de Salud",
+  "Instalaciones de primer nivel autorizadas por la Seremi de Salud ",
   "Especialistas en Implantología y Periodoncia de la Universidad de Chile",
   "Ubicada en Plaza Egaña (Límite La Reina / Ñuñoa), acceso Metro L3 y L4",
   "Métodos de pago con transferencia, efectivo, cheque o tarjetas",
@@ -15,7 +15,7 @@ export default function OurApproach() {
   return (
     <section
       id="about"
-      aria-label="Sobre nosotros — Clínica Dental T-DENT"
+      aria-label="Sobre nosotros — Clínica Dental Tdent"
       className="py-20 lg:py-28 bg-white"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,7 +45,7 @@ export default function OurApproach() {
                 </p>
                 <p>
                   Combinamos altos estándares de calidad e instalaciones autorizadas sanitariamente
-                  para entregar tratamientos seguros — tanto preventivos como correctivos — 
+                  para entregar tratamientos seguros — tanto preventivos como correctivos —
                   para toda la familia. Atendemos pacientes de <strong>La Reina, Ñuñoa, Peñalolén, Macul</strong> y toda la zona oriente de Santiago.
                 </p>
               </div>

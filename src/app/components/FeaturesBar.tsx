@@ -19,7 +19,7 @@ const features = [
   {
     icon: Smile,
     title: "Seremi de Salud",
-    description: "Instalaciones certificadas y autorizadas",
+    description: "Instalaciones certificadas y autorizadas N° 2513168710",
     color: "text-emerald-600",
     bg: "bg-emerald-50",
   },

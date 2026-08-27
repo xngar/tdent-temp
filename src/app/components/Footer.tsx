@@ -64,7 +64,7 @@ const contactInfo = [
 
 const hours = [
   { day: "Lunes – Viernes", time: "9:30 AM – 18:30 PM" },
-  { day: "Sábado", time: "9:00 AM – 2:00 PM" },
+  { day: "Sábado", time: "Cerrado" },
   { day: "Domingo", time: "Cerrado" },
 ];
 
@@ -189,7 +189,7 @@ export default function Footer() {
       <div className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white text-center sm:text-left">
-            © {new Date().getFullYear()} T-DENT Clínica Dental. Todos los
+            © {new Date().getFullYear()} Tdent Clínica Dental. Todos los
             derechos reservados.
           </p>
           <LegalModals />

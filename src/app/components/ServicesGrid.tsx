@@ -194,7 +194,7 @@ export default function ServicesGrid() {
                 Centro de Radiología e Imagenología y Derivaciones
               </h4>
               <p className="text-sm text-slate-600 leading-relaxed">
-                En nuestro edificio hay un centro de radiología e imagenología, lo
+                En nuestro edificio hay un centro de radiología e imagenología, lo que
                 facilitará el flujo de tus diagnósticos y tratamientos.<br></br> Contamos
                 con una completa red de derivaciones con profesionales de
                 excelencia para especialidades odontológicas complementarias a
