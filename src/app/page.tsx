@@ -31,7 +31,7 @@ export default function HomePage() {
       <Navbar />
 
       {/* Main content */}
-      <main id="main-content" tabIndex={-1}>
+      <main id="main-content" tabIndex={-1} className="overflow-x-clip">
         {/* ① Hero — priority load, no Suspense boundary needed */}
         <Hero />
 
