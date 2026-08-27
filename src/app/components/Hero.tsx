@@ -173,7 +173,7 @@ export default function Hero() {
               </div>
 
               {/* Floating card — Tratamiento sin dolor */}
-              <div className="absolute top-6 -right-4 lg:-right-12">
+              <div className="absolute top-6 right-2 sm:right-0 lg:-right-12">
                 <div className="glass-card rounded-2xl p-4 shadow-xl min-w-[180px]">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
