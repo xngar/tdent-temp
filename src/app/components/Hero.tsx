@@ -19,19 +19,21 @@ export default function Hero() {
           fill
           sizes="100vw"
           className="object-cover"
-          style={{ objectPosition: "calc(50% + 350px) center" }}
+          style={{ objectPosition: "calc(50% + 350px) center", filter: "saturate(1.4)" }}
           priority
           fetchPriority="high"
           quality={85}
         />
       </div>
 
-      {/* Left-to-right white gradient overlay — keeps text readable */}
+      {/* Gradient overlays: left→right + bottom→top to hide image edge */}
       <div
         className="absolute inset-0"
         style={{
-          background:
-            "linear-gradient(to right, white 30%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.3) 70%, transparent 100%)",
+          background: `
+            linear-gradient(to right, rgba(255,255,255,0.75) 25%, rgba(255,255,255,0.5) 45%, rgba(255,255,255,0.15) 65%, transparent 100%),
+            linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 20%, transparent 48%)
+          `,
         }}
         aria-hidden="true"
       />
@@ -85,7 +87,7 @@ export default function Hero() {
       </div>
 
       {/* Floating info badge — right side, over the image */}
-      <div className="absolute -translate-y-1/2 right-6 lg:right-12 hidden sm:block" style={{ top: "calc(50% - 150px)" }}>
+      <div className="animate-float absolute right-6 lg:right-12 hidden sm:block" style={{ top: "calc(50% - 150px)" }}>
         <div className="glass-card rounded-2xl p-4 shadow-xl min-w-[200px]">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shrink-0">
