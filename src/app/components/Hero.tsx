@@ -19,7 +19,7 @@ export default function Hero() {
           fill
           sizes="100vw"
           className="object-cover"
-          style={{ objectPosition: "calc(50% + 350px) center", filter: "saturate(1.4)" }}
+          style={{ objectPosition: "calc(50% + 350px) calc(50% - 100px)", filter: "saturate(1.4)" }}
           priority
           fetchPriority="high"
           quality={85}
@@ -31,7 +31,7 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           background: `
-            linear-gradient(to right, rgba(255,255,255,0.75) 25%, rgba(255,255,255,0.5) 45%, rgba(255,255,255,0.15) 65%, transparent 100%),
+            linear-gradient(to right, rgba(255,255,255,0.85) 30%, rgba(255,255,255,0.55) 52%, rgba(255,255,255,0.2) 68%, transparent 82%),
             linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 20%, transparent 48%)
           `,
         }}
