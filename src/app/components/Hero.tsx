@@ -79,26 +79,25 @@ export default function Hero() {
               </Link>
             </div>
 
-            {/* Floating info badge */}
-            <div className="inline-flex">
-              <div className="glass-card rounded-2xl p-4 shadow-xl">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
-                    <Stethoscope
-                      className="w-5 h-5 text-white"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-slate-800">
-                      Tus dientes son únicos
-                    </p>
-                    <p className="text-xs text-slate-500 leading-snug">
-                      Te ayudaremos a mantenerlos el mayor tiempo posible
-                    </p>
-                  </div>
-                </div>
-              </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* Floating info badge — right side, over the image */}
+      <div className="absolute -translate-y-1/2 right-6 lg:right-12 hidden sm:block" style={{ top: "calc(50% - 150px)" }}>
+        <div className="glass-card rounded-2xl p-4 shadow-xl min-w-[200px]">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shrink-0">
+              <Stethoscope className="w-5 h-5 text-white" aria-hidden="true" />
+            </div>
+            <div>
+              <p className="text-sm font-bold text-slate-800">
+                Tus dientes son únicos
+              </p>
+              <p className="text-xs text-slate-500 leading-snug">
+                Te ayudaremos a mantenerlos el mayor tiempo posible
+              </p>
             </div>
           </div>
         </div>
