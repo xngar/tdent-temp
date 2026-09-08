@@ -19,7 +19,7 @@ export default function Hero() {
           fill
           sizes="100vw"
           className="object-cover"
-          style={{ objectPosition: "calc(50% + 350px) calc(50% - 100px)", filter: "saturate(1.4)" }}
+          style={{ objectPosition: "calc(50% + 350px) calc(50% - 100px)", filter: "saturate(1.7)" }}
           priority
           fetchPriority="high"
           quality={85}
