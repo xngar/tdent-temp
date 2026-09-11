@@ -71,7 +71,8 @@ export default function Hero() {
             {/* CTA buttons */}
             <div className="flex flex-wrap gap-4">
               <Link
-                href="#contact"
+
+                href="https://ff.healthatom.io/xR4ZC3"
                 id="hero-book-appointment"
                 className="btn-primary inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-principal)] text-white font-semibold rounded-2xl shadow-lg"
                 aria-label="Agenda tu consulta en T-DENT"
