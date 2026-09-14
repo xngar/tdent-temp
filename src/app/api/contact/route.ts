@@ -4,8 +4,9 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(request: NextRequest) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
+    console.error("Error: La variable de entorno RESEND_API_KEY no está configurada.");
     return NextResponse.json(
-      { error: "Configuración del servidor incompleta." },
+      { error: "Configuración del servidor incompleta. Verifica la variable RESEND_API_KEY." },
       { status: 500 }
     );
   }
@@ -23,9 +24,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Usar el remitente configurado en variables de entorno o el dominio de prueba por defecto
+    const fromEmail = process.env.RESEND_FROM_EMAIL || "T-DENT Contacto <onboarding@resend.dev>";
+    // Destinatario configurable
+    const toEmail = process.env.CONTACT_TO_EMAIL || "clinicadentaltdent@gmail.com";
+
     const { data, error } = await resend.emails.send({
-      from: "T-DENT Contacto <onboarding@resend.dev>",
-      to: ["clinicadentaltdent@gmail.com"],
+      from: fromEmail,
+      to: [toEmail],
       subject: `T-DENT Consulta: ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8fafc; border-radius: 12px;">
@@ -68,16 +74,20 @@ export async function POST(request: NextRequest) {
     if (error) {
       console.error("Resend error:", error);
       return NextResponse.json(
-        { error: "Error al enviar el mensaje. Inténtalo de nuevo." },
+        { 
+          error: error.message || "Error al enviar el mensaje. Inténtalo de nuevo.",
+          details: error
+        },
         { status: 500 }
       );
     }
 
     return NextResponse.json({ success: true, id: data?.id }, { status: 200 });
-  } catch (err) {
+  } catch (err: unknown) {
+    const errorMessage = err instanceof Error ? err.message : "Error interno del servidor.";
     console.error("Server error:", err);
     return NextResponse.json(
-      { error: "Error interno del servidor." },
+      { error: errorMessage },
       { status: 500 }
     );
   }
